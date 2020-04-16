@@ -282,15 +282,8 @@ if ($status == "on")
             {
                 if ($eitaa_channel_one != "" || $eitaa_channel_two != "" || $eitaa_channel_three != "" || $eitaa_channel_four != "" || $eitaa_channel_five != "")
                 {
-                    if (in_array($chat_id, $admin))
-                    {
-                        user_position("autoSender");
-                        show_keyboard($auto_sender_keyboard_options, $about_auto_sender);
-                    }
-                    else 
-                    {
-                        show_message("این بخش در حال به روز رسانی می باشد.");
-                    }
+                    user_position("autoSender");
+                    show_keyboard($auto_sender_keyboard_options, $about_auto_sender);
                 }
                 else 
                 {
